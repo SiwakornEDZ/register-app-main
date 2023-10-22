@@ -33,7 +33,7 @@
 
    <h1> Thank You </h1>
    <br>
-   <h1> Happy Learning. Siwakorn Kanatanabat.</h1>
+   <h1> Happy Learning. Siwakorn Kanatanabat..</h1>
    <br>
    <h1> Computer Engineering.</h1>
    
