@@ -17,12 +17,12 @@ pipeline {
             steps {
                 cleanWs()
             }
-        }
+         }
          stage("Checkout from SCM") {
                steps {
                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/SiwakornEDZ/register-app-main'
-               }
-        }
+                     }
+         }
          stage("Build Appliction"){
              steps {
                   sh "mvn clean package"
@@ -33,10 +33,10 @@ pipeline {
 	              script {
 		                withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') { 
                                 sh "mvn sonar:sonar"
-		              }
-	            }	
-          }
-       }
+		               }
+	                     }	
+                  }
+        }
 	stage("Quality Gate"){
            steps {
                script {
